@@ -1,0 +1,43 @@
+{
+  "metaData": {
+    "title" : "Retreats",
+    "description" : "Indian Ocean Surf Retreats",
+    "ogImage" : "/images/ogimage.jpg",
+    "keywords" : "Astrojs, Portfolio, Astrojs Portfolio"
+  },
+
+  "logo" : "/images/logo.svg",
+  "logoText" : "Retreats",
+  "favicon" : "/images/favicon.png",
+  "baseUrl" : "https://aver-astro.vercel.app/",
+  "basePath" : "/",
+  "trailingSlash" : false,
+
+  "settings" : {
+    "deviceIndicator" : false,
+    "pagination_limit" : 6
+  },
+
+  "socialLinks" : [
+    {
+      "name": "FB",
+      "fullName": "Facebook",
+      "link": "https://facebook.com/"
+    },
+    {
+      "name": "X",
+      "fullName": "X / Twitter",
+      "link": "https://twitter.com/"
+    },
+    {
+      "name": "IN",
+      "fullName": "Linkedin",
+      "link": "https://linkedin.com/"
+    },
+    {
+      "name": "GITHUB",
+      "fullName": "Github",
+      "link": "https://github.com/"
+    }
+  ]
+}
