@@ -7,7 +7,7 @@
   },
 
   "logo" : "Retreats",
-  "logoText" : "c19",
+  "logoText" : "",
   "favicon" : "/images/favicon.png",
   "baseUrl" : "https://aver-astro.vercel.app/",
   "basePath" : "/",
