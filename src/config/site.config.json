@@ -6,7 +6,7 @@
     "keywords" : "Astrojs, Portfolio, Astrojs Portfolio"
   },
 
-  "logo" : "Retreats",
+  "logo" : `<a href="/" class="inline-block align-middle text-3xl"><span>Retreats</span></a>`,
   "logoText" : "",
   "favicon" : "/images/favicon.png",
   "baseUrl" : "https://aver-astro.vercel.app/",
