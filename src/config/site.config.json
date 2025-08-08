@@ -1,24 +1,21 @@
 {
   "metaData": {
-    "title" : "Retreats",
-    "description" : "Indian Ocean Surf Retreats",
-    "ogImage" : "/images/ogimage.jpg",
-    "keywords" : "Astrojs, Portfolio, Astrojs Portfolio"
+    "title": "Retreats",
+    "description": "Indian Ocean Surf Retreats",
+    "ogImage": "/images/ogimage.jpg",
+    "keywords": "Astrojs, Portfolio, Astrojs Portfolio"
   },
-
-  "logo" : `<a href="/" class="inline-block align-middle text-3xl"><span>Retreats</span></a>`,
-  "logoText" : "",
-  "favicon" : "/images/favicon.png",
-  "baseUrl" : "https://aver-astro.vercel.app/",
-  "basePath" : "/",
-  "trailingSlash" : false,
-
-  "settings" : {
-    "deviceIndicator" : false,
-    "pagination_limit" : 6
+  "logo": "Retreats",
+  "logoText": "",
+  "favicon": "/images/favicon.png",
+  "baseUrl": "https://aver-astro.vercel.app/",
+  "basePath": "/",
+  "trailingSlash": false,
+  "settings": {
+    "deviceIndicator": false,
+    "pagination_limit": 6
   },
-
-  "socialLinks" : [
+  "socialLinks": [
     {
       "name": "FB",
       "fullName": "Facebook",
