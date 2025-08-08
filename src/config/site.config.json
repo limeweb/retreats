@@ -1,11 +1,11 @@
 {
   "metaData": {
-    "title": "Retreats",
+    "title": "Surf Retreats",
     "description": "Indian Ocean Surf Retreats",
     "ogImage": "/images/ogimage.jpg",
     "keywords": "Astrojs, Portfolio, Astrojs Portfolio"
   },
-  "logo": "Retreats",
+  "logo": "Surf Retreats",
   "logoText": "Surf Retreats",
   "favicon": "/images/favicon.svg",
   "baseUrl": "https://aver-astro.vercel.app/",
