@@ -7,7 +7,7 @@
   },
 
   "logo" : "Damara",
-  //"logoText" : "",
+  "logoText" : "Retreatsc13",
   "favicon" : "/images/favicon.png",
   "baseUrl" : "https://aver-astro.vercel.app/",
   "basePath" : "/",
