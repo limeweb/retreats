@@ -118,18 +118,11 @@ const Header = () => {
       <div className="container">
         <div className="flex justify-between py-6 items-center relative">
           <div className={`w-1/4 transition-all duration-300 ${isScrolled ? "lg:opacity-0 lg:-translate-x-8" : ""}`}>
-            <a
-              href="/" 
-              className="inline-block align-middle"
-              onClick={handleLinkClick}
-            >
-              <img
-                src={logo}
-                alt={logoText}
-                width="80"
-                height="29"
-              />
-            </a>
+            <a href="/" 
+            className="inline-block align-middle text-3xl"
+            onClick={handleLinkClick}
+          > <span>{logoText}</span></a>
+
           </div>
           {/*  */}
           <nav
