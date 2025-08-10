@@ -8,11 +8,11 @@ import Pagination from "@components/Pagination.astro";
 import ProjectCard from "@components/ProjectCard.astro";
 
 import { settings } from "@config/site.config.json";
-const projectpage = await getPage('pages', 'project');
+const projectpage = await getPage('pages', 'Retreat');
 if (!projectpage) return new Response(null, { status: 404, headers: { 'content-type': 'text/html' } });
 const { title, subtitle } : any = projectpage?.data;
 
-const projects = await getPageCollection("project");
+const projects = await getPageCollection("Retreat");
 const totalPages = Math.ceil(projects.length / settings.pagination_limit);
 const currentProjects = projects.slice(0, settings.pagination_limit);
 
@@ -24,14 +24,14 @@ const currentProjects = projects.slice(0, settings.pagination_limit);
   <section class="py-20 md:py-28 bg-white text-dark rounded-b-2xl">
     <div class="container">
       <div class="row md:gx-4 gy-4">
-        {currentProjects.map((project) => (
+        {currentProjects.map((Retreat) => (
           <div class="sm:col-6">
-            <ProjectCard slug={project.slug} data={project.data} twoColumns={true} />
+            <ProjectCard slug={Retreat.slug} data={Retreat.data} twoColumns={true} />
           </div>
         ))}
 
         <div class="col-12 mt-12">
-          <Pagination section="project" currentPage={1} totalPages={totalPages} />
+          <Pagination section="Retreat" currentPage={1} totalPages={totalPages} />
         </div>
       </div>
     </div>

@@ -144,7 +144,7 @@ const Header = () => {
                 className={`py-3 px-[22px] leading-none relative z-20 block text-white hover:text-white/50 hover:lg:text-white ${!mobileNavClose ? "opacity-100" : "opacity-0"} lg:opacity-100 ${
                   pathname === item.link
                     || pathname.includes("/blog") && item.link === "/blog"
-                    || pathname.includes("/project") && item.link === "/project"
+                    || pathname.includes("/Retreat") && item.link === "/Retreat"
                     ? "active" : ""
                 }`}
                 onMouseEnter={handleLinkMouseEnter}
