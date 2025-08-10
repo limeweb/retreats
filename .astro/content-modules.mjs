@@ -1,7 +1,7 @@
 
 export default new Map([
 ["src/content/project/cocacola.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fproject%2Fcocacola.mdx&astroContentModuleFlag=true")],
-["src/content/project/Sri-Lank.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fproject%2Fcuroloy.mdx&astroContentModuleFlag=true")],
+["src/content/project/curoloy.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fproject%2Fcuroloy.mdx&astroContentModuleFlag=true")],
 ["src/content/project/everyday.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fproject%2Feveryday.mdx&astroContentModuleFlag=true")],
 ["src/content/project/not-pot.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fproject%2Fnot-pot.mdx&astroContentModuleFlag=true")],
 ["src/content/project/shuvashini.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fproject%2Fshuvashini.mdx&astroContentModuleFlag=true")],
