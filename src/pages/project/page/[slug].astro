@@ -9,11 +9,11 @@ import Pagination from "@components/Pagination.astro";
 import ProjectCard from "@components/ProjectCard.astro";
 
 import { settings } from "@config/site.config.json";
-const projectpage = await getPage('pages', 'Retreat');
+const projectpage = await getPage('pages', 'project');
 const { title, subtitle } : any = projectpage?.data;
 
 export async function getStaticPaths() {
-  const projects = await getPageCollection("Retreat");
+  const projects = await getPageCollection("project");
   const totalPages = Math.ceil(projects.length / settings.pagination_limit);
   const paths = [];
 
@@ -28,7 +28,7 @@ export async function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
-const projects = await getPageCollection("Retreat");
+const projects = await getPageCollection("project");
 const currentPage = slug && !isNaN(Number(slug)) ? Number(slug) : 1;
 const { currentItems: currentProjects, totalPages } = 
   getPagination(projects, currentPage, settings.pagination_limit);
@@ -41,14 +41,14 @@ const { currentItems: currentProjects, totalPages } =
   <section class="py-20 md:py-28 bg-white text-dark rounded-b-2xl">
     <div class="container">
       <div class="row md:gx-4 gy-4">
-        {currentProjects.map((Retreat) => (
+        {currentProjects.map((project) => (
           <div class="sm:col-6">
-            <ProjectCard slug={Retreat.slug} data={Retreat.data} twoColumns={true} />
+            <ProjectCard slug={project.slug} data={project.data} twoColumns={true} />
           </div>
         ))}
 
         <div class="col-12 mt-12">
-          <Pagination section="Retreat" currentPage={currentPage} totalPages={totalPages} />
+          <Pagination section="project" currentPage={currentPage} totalPages={totalPages} />
         </div>
       </div>
     </div>

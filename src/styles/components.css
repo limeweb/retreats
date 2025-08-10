@@ -15,7 +15,7 @@
   .init-delay { transition-delay: var(--lg-delay) }
 }
 
-/* has-twoColumns Retreat */
+/* has-twoColumns project */
 @media screen and (max-width: 1023px) {
   .has-twoColumns {
     height: 100% !important;

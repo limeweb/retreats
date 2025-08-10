@@ -8,31 +8,31 @@ import { markdownify } from "@lib/utils/textConverter";
 import { formatDate } from "@utils/formatDate";
 
 export async function getStaticPaths() {
-  const allProjects: CollectionEntry<"Retreat">[] = await getCollection("Retreat");
-  const publishedProjects = allProjects.filter(Retreat => !Retreat.data.draft);
+  const allProjects: CollectionEntry<"project">[] = await getCollection("project");
+  const publishedProjects = allProjects.filter(project => !project.data.draft);
 
   const sortedProjects = publishedProjects.sort((a, b) =>
     new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
   );
 
-  return publishedProjects.map((Retreat, index) => {
+  return publishedProjects.map((project, index) => {
     const previousProject = sortedProjects[index - 1] || null;
     const nextProject = sortedProjects[index + 1] || null;
 
     return {
-      params: { slug: Retreat.slug },
-      props: { Retreat, previousProject, nextProject },
+      params: { slug: project.slug },
+      props: { project, previousProject, nextProject },
     };
   });
 }
 
-const { Retreat, previousProject, nextProject } = Astro.props;
+const { project, previousProject, nextProject } = Astro.props;
 
-const { date, title, description, image, color, category, projectInfo } = Retreat.data;
+const { date, title, description, image, color, category, projectInfo } = project.data;
 const formattedDate = formatDate(date);
 const projectUrl = Astro.url.href;
 
-const { Content } = await Retreat.render();
+const { Content } = await project.render();
 ---
 
 <Layout title={title} description={description} image={image}>
@@ -92,7 +92,7 @@ const { Content } = await Retreat.render();
     <div class="container">
       <div class="mb-16">
         <h2 class="text-4xl md:text-5xl font-secondary font-medium -mt-[6px] text-center">
-          {nextProject ? "Next" : "Previous"} Retreat
+          {nextProject ? "Next" : "Previous"} project
         </h2>
       </div>
       <div class="row justify-center">

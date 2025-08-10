@@ -12,8 +12,8 @@ const homepage = await getPage('pages', '-index');
 const { banner, featuredBy, workProcess } : any = homepage?.data;
 if (!homepage) return new Response(null, { status: 404, headers: { 'content-type': 'text/html' } });
 
-const projectpage = await getPage('pages', 'Retreat');
-const projects = await getPageCollection("Retreat", 5);
+const projectpage = await getPage('pages', 'project');
+const projects = await getPageCollection("project", 5);
 
 const blogpage = await getPage('pages', 'blog');
 const blogs = await getPageCollection("blog", 3);
@@ -74,12 +74,12 @@ const blogs = await getPageCollection("blog", 3);
 			</div>
 
 			<div class="row md:gx-4 gy-4">
-				{projects?.map((Retreat, i) => (
+				{projects?.map((project, i) => (
 					<div class={`${i % 5 >= 3 ? "sm:col-6" : "lg:col-4 sm:col-6"} ${i === 4 ? "hidden lg:block" : ""}`}>
 						<ProjectCard
 							index={i}
-							slug={Retreat.slug}
-							data={Retreat.data}
+							slug={project.slug}
+							data={project.data}
 							twoColumns={i % 5 >= 3}
 						/>
 					</div>
@@ -87,7 +87,7 @@ const blogs = await getPageCollection("blog", 3);
 			</div>
 
 			<div class="text-center mt-16">
-				<a class="button" href="/Retreat">
+				<a class="button" href="/project">
 					<span>All Works</span>
 				</a>
 			</div>

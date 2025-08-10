@@ -1,7 +1,7 @@
 {
-  "$ref": "#/definitions/Retreat",
+  "$ref": "#/definitions/project",
   "definitions": {
-    "Retreat": {
+    "project": {
       "type": "object",
       "properties": {
         "draft": {

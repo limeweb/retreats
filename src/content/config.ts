@@ -39,6 +39,6 @@ const pagesCollection = defineCollection({
 
 export const collections = {
   blog: blogCollection,
-  Retreat: projectCollection,
+  project: projectCollection,
   pages: pagesCollection
 }
